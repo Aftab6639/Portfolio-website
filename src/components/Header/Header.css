@@ -1,0 +1,87 @@
+/* Header */
+header {
+    height: 150vh;
+    padding-top: 7rem;
+    overflow: hidden;
+}
+
+/* Header Container */
+.header_container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+/* Call to Action */
+.cta {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+/* Header Social */
+.header-socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+}
+
+
+/* Social Separator */
+.header-socials::after {
+    content: '';
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary); /* Ensure --color-primary is defined */
+}
+
+/* Profile Picture */
+.me {
+    width: 22rem;
+    height: 30rem;
+    position: absolute;
+    left: 50%;
+    margin-top: 6rem;
+    transform: translateX(-50%);
+    border-radius: 12rem 12rem 0 0;
+    overflow: hidden;
+    padding: 5rem 1.5rem 1.5rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(var(--color-primary), transparent); /* Changed: Gradient background */
+    background-color: rgb(28, 28, 214);
+}
+
+
+
+/* Profile Picture Content */
+.scroll__down{
+    position: absolute;
+    right: -2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+@media screen and (max-width: 1024px){
+   header {
+height: 68vh;
+}
+    section{
+        margin-top: 6rem;
+    }
+}
+@media screen and (max-width: 600px){
+    header{
+height: 100vh;
+    }
+    .header-socials, .scroll__down{
+        /* margin-bottom: 2rem; */
+        display: none;
+    }
+}
