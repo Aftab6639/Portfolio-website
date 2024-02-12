@@ -55,9 +55,6 @@ header {
     background: linear-gradient(var(--color-primary), transparent); /* Changed: Gradient background */
     background-color: rgb(28, 28, 214);
 }
-
-
-
 /* Profile Picture Content */
 .scroll__down{
     position: absolute;
